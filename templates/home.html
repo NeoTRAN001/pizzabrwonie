@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock%}
+
+{% block content%}
+    <div id="container">
+        <!-- Start	Product details -->
+        <div class="product-details">
+            <!-- 	Product Name -->
+            <h1>Pizza Brownie</h1>
+            <!-- 		<span class="hint new">New</span> -->
+            <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
+            <!-- 		the Product rating -->
+            <span class="hint-star star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </span>
+            <!-- The most important information about the product -->
+            <p class="information">" Pizza Brownie se especializa en la producción y distribución de blablablablablablablablablabla "</p>
+            <!-- Control -->
+            <div class="control">
+
+                <!-- Start Button buying -->
+                <a class="btn" href="{{ url_for('contact') }}">
+                    <!-- 		the Price -->
+                    <span class="price"><i class="fas fa-brackets"></i></span>
+                    <!-- 		shopping cart icon-->
+                    <span class="shopping-cart"><i class="fa fa-mobile-alt" aria-hidden="true"></i></span>
+                    <!-- 		Buy Now / ADD to Cart-->
+                    <span class="buy">Contact</span>
+                </a>
+                <!-- End Button buying -->
+            </div>
+        </div>
+        <!-- 	End	Product details   -->
+        <!-- 	Start product image & Information -->
+        <div class="product-image">
+
+            <img src="https://scontent.fmex16-1.fna.fbcdn.net/v/t1.0-9/49138052_2152259838175033_4729524429082591232_n.jpg?_nc_cat=109&_nc_ht=scontent.fmex16-1.fna&oh=de26e8e46f09fe61b41aa35e3f74aa72&oe=5CE3B563">
+
+            <!-- 	product Information-->
+            <div class="info">
+                <h2>The Description</h2>
+                <ul>
+                    <li><strong><a href="facebook.com">Facebook <i class="fab fa-facebook"></i></a></li>
+                    <li><strong>Blabla: </strong>Damp</li>
+                    <li><strong>Blablabla: </strong>9 - 11</li>
+                    <li><strong>bla: </strong>2 - 3 feet</li>
+                    <li><strong>Blabla Bla in: </strong>Mid‑Summer - Mid‑Fall</li>
+                    <li><strong>Blabla: </strong>Tolerates heat</li>
+                </ul>
+            </div>
+        </div>
+        <!--  End product image  -->
+    </div>
+{% endblock%}
